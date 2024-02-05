@@ -1,20 +1,15 @@
 package Java_OOP_Seminar_2.HomeWork;
 
-/**
- * Cat
- */
-public class Cat extends LiveParticipants{
-
-    //private String nameClass = "Кот";
-
-    public Cat(String name, Integer numbPartic, int maxRun, int maxJump){
-        super(name, numbPartic, maxRun, maxJump);
+public class Cat extends LivePartic{
+    public Cat(String name, Integer age, Integer id, int maxRun, int maxJump) {
+        super(name, age, id, maxRun, maxJump);
     }
-
     @Override
-    public String getNameClass() {
-        return "Кот";
+    public String infoPartic() {
+        return "Name cat: " + getName() + "\n"
+                + "age: " + getAge() + "\n"
+                + "id: " + getId() + "\n"
+                + "maxRun: " + getMaxRun() + "\n"
+                + "maxJump: " + getMaxJump() + "\n";
     }
-    
-    
 }

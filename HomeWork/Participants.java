@@ -1,39 +1,31 @@
 package Java_OOP_Seminar_2.HomeWork;
 
-public class Participants{
+public abstract class Participants {
+    private final String name;
+    private final Integer id;
+    private final int maxRun;
+    private final int maxJump;
 
-    protected String name;
-    protected Integer numbPartic;
-
-    protected int maxRun;
-    protected int maxJump;
-
-    private String nameClass;
-
-    public Participants(String name, Integer numbPartic, int maxRun, int maxJump) {
+    public Participants(String name, Integer id, int maxRun, int maxJump) {
         this.name = name;
-        this.numbPartic = numbPartic;
+        this.id = id;
         this.maxRun = maxRun;
         this.maxJump = maxJump;
     }
-
     public String getName() {
         return name;
     }
 
-    public Integer getNumbPartic() {
-        return numbPartic;
+    public Integer getId() {
+        return id;
     }
 
-    public Integer getMaxRun(){
+    public int getMaxRun() {
         return maxRun;
     }
 
-    public Integer getMaxJump() {
+    public int getMaxJump() {
         return maxJump;
     }
-
-    public String getNameClass() {
-        return nameClass;
-    }
+    public abstract String infoPartic();
 }

@@ -1,21 +1,16 @@
 package Java_OOP_Seminar_2.HomeWork;
 
-/**
- * Robot
- */
 public class Robot extends Participants{
 
-    //private String nameClass = "Робот";
-
-    public Robot(String name, Integer numbPartic, int maxRun, int maxJump) {
-        super(name, numbPartic, maxRun, maxJump);
+    public Robot(String name, Integer id, int maxRun, int maxJump) {
+        super(name, id, maxRun, maxJump);
     }
 
     @Override
-    public String getNameClass() {
-        return "Робот";
+    public String infoPartic() {
+        return "Name robot: " + getName() + "\n"
+                            + "id: " + getId() + "\n"
+                            + "maxRun: " + getMaxRun() + "\n"
+                            + "maxJump: " + getMaxJump() + "\n";
     }
-
-
-    
 }

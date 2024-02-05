@@ -1,18 +1,16 @@
 package Java_OOP_Seminar_2.HomeWork;
 
-/**
- * Human
- */
-public class Human extends LiveParticipants{
+public class Human extends LivePartic{
 
-    //private String nameClass = "Человек";
-
-    public Human(String name, Integer numbPartic, int maxRun, int maxJump){
-        super(name, numbPartic, maxRun, maxJump);
+    public Human(String name, Integer age, Integer id, int maxRun, int maxJump) {
+        super(name, age, id, maxRun, maxJump);
     }
-
     @Override
-    public String getNameClass() {
-        return "Человек";
+    public String infoPartic() {
+        return "Name human: " + getName() + "\n"
+                + "age: " + getAge() + "\n"
+                + "id: " + getId() + "\n"
+                + "maxRun: " + getMaxRun() + "\n"
+                + "maxJump: " + getMaxJump() + "\n";
     }
 }

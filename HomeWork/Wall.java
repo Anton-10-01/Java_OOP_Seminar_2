@@ -1,25 +1,12 @@
 package Java_OOP_Seminar_2.HomeWork;
 
-/**
- * Wall
- */
+import java.util.Random;
+
 public class Wall {
-
-    private Integer height;
-
-    public Wall(Integer height) {
-        this.height = height;
-    }
-
     public Wall() {
     }
 
     public Integer getHeight() {
-        return height;
+        return new Random().nextInt(40);
     }
-
-    public void setHeight(Integer height) {
-        this.height = height;
-    }
-    
 }
